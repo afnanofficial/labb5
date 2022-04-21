@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <body>
+        <p>"Lorem Ipsum is simply dummy text of the printing and typesetting industry.</p>
+        <p id="bigbold"> </p>
+        <p>It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially</p>
+        <p id="bold1"> </p>
+        <p>. It was popularised in the</p>
+        <p id="bold2"> </p>
+        <p>with the release of</p>
+        <p id="bold3"> </p>
+        <p>sheets containing Lorem Ipsum passages, and</p>
+        <p id="strike"> </p>
+        <p>publishing software like Aldus</p>
+        <p id="link"> </p>
+        <p>including versions of</p>
+        <p id="bigitalic"> </p>
+        <p>."</p>
+    
+        <script>
+            let _bigbold = "Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book.";
+            let _bold1 = "UNCHANGED";
+            let _bold2 = "1960s";
+            let _bold3 = "LETRASET";
+            let _strike = "more recently with desktop";
+            let _link = "PageMaker";
+            let _bigitalic = "Lorem Ipsum";
+    
+            let result11 = _bigbold.fontsize(6).bold();
+            document.getElementById("bigbold").innerHTML = result11;
+    
+            let result22 = _bold1.bold();
+            document.getElementById("bold1").innerHTML = result22;
+    
+            let result33 = _bold2.bold();
+            document.getElementById("bold2").innerHTML = result33;
+    
+            let result44 = _bold3.bold();
+            document.getElementById("bold3").innerHTML = result44;
+    
+            let result55 = _strike.strike();
+            document.getElementById("strike").innerHTML = result55;
+    
+            let result66 = _link.link("https://www.google.com/");
+            document.getElementById("link").innerHTML = result66;
+    
+            let result77 = _bigitalic.fontsize(6).italics();
+            document.getElementById("bigitalic").innerHTML = result77;
+            
+        </script>
+    
+    </body>
+</body>
+</html>

@@ -1,0 +1,52 @@
+<form name = "CalculatingForm">
+    <label for="firstvall" >a</label>
+    <br>
+    <input type="text" id="firstvall" name="firstvall">
+    <br>
+    <label for="secondvall" >b</label>
+    <br>
+    <input type="text" id="secondvall" name="secondvall">
+    <br>
+    <label for="thirdvall" >c</label>
+    <br>
+    <input type="text" id="thirdvall" name="thirdvall">
+    <br>
+    <label for="fourthvall" >d</label>
+    <br>
+    <input type="text" id="fourthvall" name="fourthvall">
+    <br>
+    <input type="button" value="Calculate It" onclick="calcul()">
+    <br>
+
+    <label for="sum" >MAX:</label>
+    <br>
+    <input type="text" id="sum" name="sum">
+    <br>
+    <label for="sub" >MIN:</label>
+    <br>
+    <input type="text" id="sub" name="sub">
+    
+</form>
+
+<script>
+    function calcul()
+    {
+        
+        var num1, num2, num3, num4, res;
+        num1=Number(document.CalculatingForm.firstvall.value);
+        num2=Number(document.CalculatingForm.secondvall.value);
+        num3=Number(document.CalculatingForm.thirdvall.value);
+        num4=Number(document.CalculatingForm.fourthvall.value);
+        
+        res=Math.max(num1,num2,num3,num4);
+        
+        document.CalculatingForm.sum.value=res;
+        
+        res= res=Math.min(num1,num2,num3,num4);
+        
+        document.CalculatingForm.sub.value=res;
+        
+    
+        document.CalculatingForm.pro.value=res;
+    }
+</script>
